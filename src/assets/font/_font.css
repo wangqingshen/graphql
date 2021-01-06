@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'SalesforceSans-Bold';
+    src: url('SalesforceSans-Bold.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-BoldItalic';
+    src:url('SalesforceSans-BoldItalic.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-Italic';
+    src:url('SalesforceSans-Italic.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-Light';
+    src:url('SalesforceSans-Light.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-LightItalic';
+    src:url('SalesforceSans-LightItalic.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-Regular';
+    src:url('SalesforceSans-Regular.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-Thin';
+    src:url('SalesforceSans-Thin.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'SalesforceSans-ThinItalic';
+    src:url('SalesforceSans-ThinItalic.ttf') format('truetype')
+  }
+  

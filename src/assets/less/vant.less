@@ -1,0 +1,236 @@
+.van-checkbox {
+  display: flex;
+  align-items: center;
+
+  .van-checkbox__icon--checked .van-icon {
+    background-color: @default-color  !important;
+    border-color: @default-color  !important;
+  }
+
+  .van-checkbox__icon {
+    height: 20px;
+
+    .van-icon {
+      border-color: #ededed;
+    }
+  }
+
+  .van-checkbox__icon,
+  .van-checkbox__label {
+    line-height: inherit;
+
+  }
+
+  .van-icon-success::before {
+    top: 50%;
+    content: "\F055";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.van-radio {
+  .van-icon {
+    &.van-icon-checked {
+      color: @default-color;
+    }
+  }
+}
+
+.van-stepper {
+  .van-stepper__input {
+    height: 26px;
+    box-sizing: border-box;
+    width: 36px;
+    margin: 0 2px;
+    border: 1px solid #f2f2f2;
+  }
+
+  .van-stepper__minus,
+  .van-stepper__plus {
+    height: 26px;
+    width: 30px;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+
+.vux-1px,
+.vux-1px-b,
+.vux-1px-l,
+.vux-1px-r,
+.vux-1px-t,
+.vux-1px-tb {
+  position: relative
+}
+
+.vux-1px:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  border: 1px solid #f5f5f5;
+  color: #ededed;
+  height: 200%;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(.5);
+  transform: scale(.5)
+}
+
+.vux-1px-t:before {
+  top: 0;
+  border-top: 1px solid #f5f5f5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5)
+}
+
+.vux-1px-b:after,
+.vux-1px-t:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #ededed
+}
+
+.vux-1px-b:after {
+  bottom: 0;
+  border-bottom: 1px solid #f5f5f5;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5)
+}
+
+.vux-1px-tb:before {
+  top: 0;
+  border-top: 1px solid #f5f5f5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5)
+}
+
+.vux-1px-tb:after,
+.vux-1px-tb:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  color: #ededed;
+}
+
+.vux-1px-tb:after {
+  bottom: 0;
+  border-bottom: 1px solid #f5f5f5;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5)
+}
+
+.vux-1px-l:before {
+  left: 0;
+  border-left: 1px solid #f5f5f5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5)
+}
+
+.vux-1px-l:before,
+.vux-1px-r:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  color: #ededed;
+}
+
+.vux-1px-r:after {
+  right: 0;
+  border-right: 1px solid #f5f5f5;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5)
+}
+
+.van-toast {
+  z-index: 2000 !important;
+}
+
+.van-popup {
+  z-index: 1900 !important;
+}
+
+.van-modal {
+  background: rgba(0, 0, 0, .6);
+  z-index: 1899 !important;
+}
+
+.van-button {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-radius: 15px;
+  margin-left: 10px;
+
+  &.gray {
+    color: #666;
+    border-color: #ccc;
+  }
+
+  &.red {
+    color: @default-color;
+    border-color: @default-color;
+  }
+
+  &:before {
+    display: none;
+  }
+}
+
+.van-dialog {
+  z-index: 1922 !important;
+
+  .van-dialog__message {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .van-button {
+    color: #333;
+    height: 50px;
+    line-height: 48px;
+    font-size: 16px;
+    margin-left: 0;
+    border-radius: 0;
+
+    &.van-dialog__confirm,
+    &.van-dialog__confirm:active {
+      background-color: #fff;
+      color: @default-color;
+    }
+
+    &.van-dialog__cancel,
+    &.van-dialog__cancel:active {
+      background-color: #fff;
+    }
+  }
+
+}
+
+.van-tabs__line {
+  height: 3px;
+}

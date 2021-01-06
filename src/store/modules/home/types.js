@@ -1,0 +1,1 @@
+export const NEWS_LIST = 'NEWS_LIST'; // 获取新闻资讯
